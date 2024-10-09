@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de países</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>   
+      <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/prettycons-travel-vol-1-outline/60/40-World_Trip-travel_holiday_vacation_seaside-256.png" class ="icone">
+      <div class="filtros">
+        <input value="all" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" checked /> Todos
+        <input value="america" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> América
+        <input value="europe" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> Europa
+        <input value="asia" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> Ásia
+        <input value="africa" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> África
+        <input value="oceania" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> Oceania
+      </div>
+
+      <h1>Buscador de Países</h1>
+
+      <div class="subHeader">
+         <div class="inputBusca">
+        Pesquisar pais: <input onkeyup="buscarPaises(this.value)" type="text" />
+         </div>
+      </div>
+
+    <div class="corpo">
+
+    <h2>Total de pais: <span id="qtPaises">250</span></h2>
+    <div class="todosPaises"></div>
+</div>
+    <script src="code.js"></script>
+  </body>
+</html>

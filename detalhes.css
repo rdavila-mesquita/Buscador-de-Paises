@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f4f4f4; 
+    color: #333; 
+    line-height: 1.6; 
+    margin: 0;
+}
+.container {
+    display: flex;
+    margin: 100px 20px 20px; 
+}
+
+#paisbandeira {
+    text-align: center;
+    margin-right: 20px;
+}
+
+#paisbandeira img {
+    width: 250px; 
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap; 
+
+}
+#nome, #lingua, #continente, #area, #capital, #moeda, #populacao, #localizacao{
+    transition: transform 0.3s ease-in-out;
+}
+#nome:hover{
+	transform: scale(1.05);
+}
+#lingua:hover{
+	transform: scale(1.05);
+}
+#continente:hover{
+	transform: scale(1.05);
+}
+#area:hover{
+	transform: scale(1.05);
+}
+#capital:hover{
+	transform: scale(1.05);
+}
+#moeda:hover{
+	transform: scale(1.05);
+}
+#populacao:hover{
+	transform: scale(1.05);
+}
+#localizacao:hover{
+	transform: scale(1.05);
+}
+
+.info > div {
+    background-color: lightgray;
+    margin: 10px; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: calc(33% - 20px); 
+    min-width: 200px;
+}
+
+@media (max-width: 768px) {
+    .info > div {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .info > div {
+        width: calc(100% - 20px); 
+    }
+}
